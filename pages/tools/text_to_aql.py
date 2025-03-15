@@ -10,7 +10,7 @@ def text_to_aql_to_text(query: str):
     FOR attack IN edges
         FILTER attack.attack_vector != NULL
         RETURN {
-            attack_path: attack._from + " → " + attack._to,
+            attack_path: CONCAT(attack._from, " → ", attack._to),
             relationship: attack.relationship,
             risk_type: attack.attack_vector
         }
