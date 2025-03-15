@@ -1,0 +1,3 @@
+"Find all attack paths in AWS infrastructure."
+"Which IAM users have admin access?"
+"Find potential privilege escalation scenarios."
